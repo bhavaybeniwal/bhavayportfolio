@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Bhavay Beniwal | First-Year B.Tech CSE Portfolio</title>
+  <meta name="title" content="Bhavay Beniwal | First-Year B.Tech CSE Portfolio">
+  <meta name="description" content="Personal portfolio of Bhavay Beniwal, a 19-year-old first-year B.Tech CSE student at JECRC University, Jaipur. Learning C, Python, and computer science fundamentals.">
+  <meta name="keywords" content="Bhavay Beniwal, JECRC University, B.Tech CSE, C programming, Python, Engineering Student, Portfolio, Jaipur, Beginner Developer">
+  <meta name="author" content="Bhavay Beniwal">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beniwaljaat118.github.io/">
+  <meta property="og:title" content="Bhavay Beniwal | First-Year B.Tech CSE Portfolio">
+  <meta property="og:description" content="Portfolio of Bhavay Beniwal - 1st Year B.Tech CSE Student at JECRC University, Jaipur. Exploring C and Python programming.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&auto=format&fit=crop&q=80">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Bhavay Beniwal | First-Year B.Tech CSE Portfolio">
+  <meta property="twitter:description" content="Portfolio of Bhavay Beniwal - 1st Year B.Tech CSE Student at JECRC University, Jaipur.">
+
+  <!-- Favicon (Inline SVG modern coder badge) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%233b82f6'/><stop offset='50%' stop-color='%238b5cf6'/><stop offset='100%' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='25' fill='%230b0f1a'/><rect x='4' y='4' width='92' height='92' rx='21' fill='none' stroke='url(%23g)' stroke-width='4'/><text x='50%' y='63%' font-family='Poppins, sans-serif' font-weight='800' font-size='48' fill='url(%23g)' text-anchor='middle'>B</text></svg>">
+
+  <!-- Google Fonts: Poppins (headings) & Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-ring"></div>
+      <span class="preloader-letter">B</span>
+      <p class="preloader-text">Loading Bhavay's Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Glowing Cursor Follower (Disabled on Touch) -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Background Animated Gradient Blobs -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header id="header" class="site-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="Bhavay Beniwal Home">
+        <span class="brand-monogram">BB</span>
+        <span class="brand-name">Bhavay<span>.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link">Milestones</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Light / Dark Mode Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>First-Year B.Tech CSE @ JECRC University</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Bhavay Beniwal</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I am a </span>
+            <span id="typed-text" class="typed-text"></span>
+            <span class="typed-cursor-fallback">|</span>
+          </div>
+
+          <p class="hero-description">
+            A 19-year-old computer science student from Jaipur with a curious mind and an eagerness to learn. Currently mastering programming fundamentals in C and Python, crafting clean logic, and exploring software engineering.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary ripple-btn">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary ripple-btn">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Social Icon Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <!-- PLACEHOLDER: Replace '#' with your actual GitHub profile link -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub (Update with your profile URL)">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- PLACEHOLDER: Replace '#' with your actual LinkedIn profile link -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn (Update with your profile URL)">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:beniwaljaat118@gmail.com" class="social-icon" aria-label="Send Email" title="Email Bhavay">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+          <div class="avatar-wrapper">
+            <!-- Animated Gradient Ring -->
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring-glow"></div>
+            
+            <div class="avatar-card glass-card">
+              <!-- PLACEHOLDER INSTRUCTION: Replace this SVG illustration with your photo by placing profile.jpg in this folder and using <img src="profile.jpg" alt="Bhavay Beniwal"> -->
+              <div class="avatar-image-container">
+                <svg class="avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Bhavay Beniwal Avatar">
+                  <circle cx="100" cy="100" r="95" fill="url(#avatar-bg)"/>
+                  <circle cx="100" cy="80" r="40" fill="#cbd5e1"/>
+                  <path d="M42 165C42 135 68 120 100 120C132 120 158 135 158 165" fill="#94a3b8"/>
+                  <path d="M75 75C75 70 85 68 100 68C115 68 125 70 125 75V85C125 98 114 110 100 110C86 110 75 98 75 85V75Z" fill="#fed7aa"/>
+                  <path d="M68 62C72 45 90 40 105 40C125 40 133 49 133 60C122 55 110 54 96 55C82 56 74 60 68 62Z" fill="#1e293b"/>
+                  <!-- Tech Glasses -->
+                  <rect x="80" y="75" width="16" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+                  <rect x="104" y="75" width="16" height="11" rx="2" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+                  <line x1="96" y1="80" x2="104" y2="80" stroke="#3b82f6" stroke-width="2.5"/>
+                  <defs>
+                    <linearGradient id="avatar-bg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#1e1b4b"/>
+                      <stop offset="0.5" stop-color="#0f172a"/>
+                      <stop offset="1" stop-color="#0e7490"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <!-- Floating C & Python Badges -->
+              <div class="floating-chip chip-c" title="Currently learning C">
+                <span class="chip-icon">C</span>
+                <span class="chip-text">#include &lt;stdio.h&gt;</span>
+              </div>
+              <div class="floating-chip chip-py" title="Currently learning Python">
+                <i class="fa-brands fa-python chip-icon-py"></i>
+                <span class="chip-text">print("Hello!")</span>
+              </div>
+              <div class="floating-chip chip-status">
+                <span class="status-indicator"></span>
+                <span>Learning &amp; Building</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-down-hint" aria-label="Scroll to About Me section">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME SECTION ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Bhavay</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-bio">
+              <p class="lead-text">
+                Hello! I'm <strong>Bhavay Beniwal</strong>, a 19-year-old engineering student pursuing my Bachelor of Technology (B.Tech) in <strong>Computer Science &amp; Engineering</strong> at <strong>JECRC University, Jaipur, Rajasthan</strong>.
+              </p>
+              <p>
+                As a beginner in the expansive world of software development, my current focus is building strong, unshakable foundations. I spend my time coding in <strong>C</strong> and <strong>Python</strong>, exploring how syntax translates to machine instructions, and training my brain to break down complex problems into clear, logical steps.
+              </p>
+              <p>
+                I believe that every expert was once a beginner who refused to quit. My approach is humble, curious, and consistent—practicing loops, conditions, number patterns, and simple console utilities every single day.
+              </p>
+            </div>
+
+            <!-- Quick Details Pill Grid -->
+            <div class="about-details-list">
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="detail-value">Jaipur, Rajasthan, India</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-graduation-cap"></i> University:</span>
+                <span class="detail-value">JECRC University</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-laptop-code"></i> Degree:</span>
+                <span class="detail-value">B.Tech CSE (1st Year)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="detail-value">beniwaljaat118@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat Cards -->
+          <div class="about-stats-grid">
+            <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+              <div class="stat-icon-wrapper blue-gradient">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <div class="stat-number">1st</div>
+              <div class="stat-title">Year of B.Tech CSE</div>
+              <div class="stat-desc">Freshman student eager to learn foundational engineering concepts.</div>
+            </div>
+
+            <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="250">
+              <div class="stat-icon-wrapper purple-gradient">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="stat-number">2</div>
+              <div class="stat-title">Languages Learning</div>
+              <div class="stat-desc">Actively practicing C Programming &amp; Python fundamentals.</div>
+            </div>
+
+            <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="350">
+              <div class="stat-icon-wrapper cyan-gradient">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="stat-number">100%</div>
+              <div class="stat-title">Curious Learner</div>
+              <div class="stat-desc">Humble, disciplined, and motivated to write clean, working code.</div>
+            </div>
+
+            <div class="stat-card glass-card" data-aos="zoom-in" data-aos-delay="450">
+              <div class="stat-icon-wrapper amber-gradient">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div class="stat-number">Daily</div>
+              <div class="stat-title">Hands-on Practice</div>
+              <div class="stat-desc">Solving logic puzzles, loops, patterns &amp; arithmetic utilities.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 3. EDUCATION SECTION ==================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">A timeline of my academic background and engineering milestones.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Line -->
+          <div class="timeline-track" aria-hidden="true"></div>
+
+          <!-- Entry 1: Current B.Tech -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge current-badge">
+                <span class="pulse-dot"></span> Currently Pursuing
+              </div>
+              <span class="timeline-period">2025 — 2029 (Expected)</span>
+              <h3 class="timeline-degree">B.Tech in Computer Science &amp; Engineering</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i> JECRC University, Jaipur, Rajasthan
+              </h4>
+              <p class="timeline-desc">
+                Currently in the 1st year of engineering. Studying fundamental computer science courses, core programming in C, computational thinking with Python, problem-solving methods, and applied mathematics.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">C Programming</span>
+                <span class="tech-tag">Python Basics</span>
+                <span class="tech-tag">Discrete Math</span>
+                <span class="tech-tag">Computer Fundamentals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 2: Senior Secondary (12th Grade) - Placeholder -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content glass-card placeholder-card">
+              <div class="timeline-badge placeholder-badge">
+                <i class="fa-solid fa-pencil"></i> Editable Placeholder
+              </div>
+              <!-- EDITABLE: Update your 12th year here -->
+              <span class="timeline-period">Completed Senior Secondary</span>
+              <!-- EDITABLE: Update your 12th stream/board here -->
+              <h3 class="timeline-degree">Class 12th (Senior Secondary) — Science Stream (PCM)</h3>
+              <!-- EDITABLE: Replace with your actual school name & city -->
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-location-dot"></i> [Add Your School Name, City / State]
+              </h4>
+              <p class="timeline-desc">
+                Completed secondary schooling focusing on Physics, Chemistry, and Mathematics. Built strong analytical thinking and quantitative skills that led directly to pursuing computer science engineering.
+              </p>
+              <div class="timeline-edit-hint">
+                <i class="fa-solid fa-circle-info"></i> You can update your school name, board (CBSE/State), and percentage in <code>index.html</code>.
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 3: Secondary (10th Grade) - Placeholder -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="timeline-content glass-card placeholder-card">
+              <div class="timeline-badge placeholder-badge">
+                <i class="fa-solid fa-pencil"></i> Editable Placeholder
+              </div>
+              <!-- EDITABLE: Update your 10th year here -->
+              <span class="timeline-period">Completed Secondary Education</span>
+              <!-- EDITABLE: Update with your 10th class details -->
+              <h3 class="timeline-degree">Class 10th (Secondary School Examination)</h3>
+              <!-- EDITABLE: Replace with your actual 10th school name & city -->
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-location-dot"></i> [Add Your School Name, City / State]
+              </h4>
+              <p class="timeline-desc">
+                Completed fundamental general academics with distinction, developing an early fascination with science, logical reasoning, and computers.
+              </p>
+              <div class="timeline-edit-hint">
+                <i class="fa-solid fa-circle-info"></i> You can update your school name and board marks easily in <code>index.html</code>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Technical Toolkit</span>
+          <h2 class="section-title">My Current <span class="gradient-text">Skills</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Honest, beginner-level indicators reflecting my ongoing learning journey as a 1st-year student.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-header">
+              <div class="category-icon blue-gradient">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Programming Languages</h3>
+                <span class="category-status">Currently Learning in 1st Year</span>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <!-- C Programming -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <div class="skill-name-group">
+                    <span class="skill-logo c-logo">C</span>
+                    <span class="skill-name">C Programming</span>
+                  </div>
+                  <span class="skill-level-text">Fundamentals &amp; Logic (45%)</span>
+                </div>
+                <div class="progress-bar-container" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="C Programming skill level: 45%">
+                  <div class="progress-bar-fill" data-progress="45"></div>
+                </div>
+                <p class="skill-subtext">Data types, operators, switch-case, nested loops, functions, basic arrays.</p>
+              </div>
+
+              <!-- Python -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <div class="skill-name-group">
+                    <i class="fa-brands fa-python skill-logo python-logo"></i>
+                    <span class="skill-name">Python</span>
+                  </div>
+                  <span class="skill-level-text">Beginner Practice (40%)</span>
+                </div>
+                <div class="progress-bar-container" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level: 40%">
+                  <div class="progress-bar-fill" data-progress="40"></div>
+                </div>
+                <p class="skill-subtext">Variables, input/output, conditional logic, while/for loops, basic functions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Core Concepts -->
+          <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-header">
+              <div class="category-icon purple-gradient">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Core Concepts</h3>
+                <span class="category-status">Foundational Computer Science</span>
+              </div>
+            </div>
+
+            <div class="concept-tags-grid">
+              <div class="concept-badge">
+                <i class="fa-solid fa-repeat"></i>
+                <div class="badge-text">
+                  <strong>Loops &amp; Iteration</strong>
+                  <span>For, While, Do-While, Nested logic</span>
+                </div>
+              </div>
+
+              <div class="concept-badge">
+                <i class="fa-solid fa-code-branch"></i>
+                <div class="badge-text">
+                  <strong>Conditional Logic</strong>
+                  <span>If-else, Switch statements, Boolean tests</span>
+                </div>
+              </div>
+
+              <div class="concept-badge">
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <div class="badge-text">
+                  <strong>Modular Functions</strong>
+                  <span>Function parameters, return types, scope</span>
+                </div>
+              </div>
+
+              <div class="concept-badge">
+                <i class="fa-solid fa-list-ol"></i>
+                <div class="badge-text">
+                  <strong>Arrays &amp; Strings</strong>
+                  <span>1D arrays, indexing, string manipulation</span>
+                </div>
+              </div>
+
+              <div class="concept-badge">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <div class="badge-text">
+                  <strong>Algorithmic Thinking</strong>
+                  <span>Step-by-step logic &amp; flowcharts</span>
+                </div>
+              </div>
+
+              <div class="concept-badge">
+                <i class="fa-solid fa-calculator"></i>
+                <div class="badge-text">
+                  <strong>Number Patterns</strong>
+                  <span>Pyramids, diamonds, matrix iterations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Workflow -->
+          <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="category-header">
+              <div class="category-icon cyan-gradient">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Environment</h3>
+                <span class="category-status">Workflow &amp; Coding Utilities</span>
+              </div>
+            </div>
+
+            <div class="tools-grid">
+              <div class="tool-card">
+                <div class="tool-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="tool-name">VS Code</div>
+                <div class="tool-role">Primary Code Editor</div>
+                <span class="tool-status-pill active-pill">Daily Use</span>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon">
+                  <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <div class="tool-name">Git &amp; GitHub</div>
+                <div class="tool-role">Version Control (Learning)</div>
+                <span class="tool-status-pill learning-pill">Learning Basics</span>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon">
+                  <i class="fa-solid fa-terminal"></i>
+                </div>
+                <div class="tool-name">Command Line</div>
+                <div class="tool-role">Terminal / GCC / Python CLI</div>
+                <span class="tool-status-pill active-pill">Practicing</span>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon">
+                  <i class="fa-brands fa-windows"></i>
+                </div>
+                <div class="tool-name">Windows &amp; GCC</div>
+                <div class="tool-role">MinGW / C Compiler Setup</div>
+                <span class="tool-status-pill active-pill">Configured</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills-note glass-card" data-aos="fade-up">
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>
+            "I'm keeping my skills transparent. At this stage, my goal is not to claim mastery of 10 frameworks, but to truly understand variables, control flow, pointers, and memory step-by-step."
+          </p>
+          <span class="note-author">— Bhavay Beniwal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. PROJECTS SECTION ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Hands-on Practice</span>
+          <h2 class="section-title">My Starter <span class="gradient-text">Projects</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Authentic beginner programs written in C and Python to test and strengthen programming logic.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Simple Calculator in C -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-header">
+              <div class="project-icon-box blue-gradient">
+                <i class="fa-solid fa-calculator"></i>
+              </div>
+              <span class="project-type-badge">C Language</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Simple Calculator (C)</h3>
+              <p class="project-description">
+                A menu-driven command-line calculator written in C. Performs fundamental arithmetic operations (addition, subtraction, multiplication, division, modulo) using switch-case statements with division-by-zero validation.
+              </p>
+              
+              <div class="project-highlights">
+                <span><i class="fa-solid fa-check"></i> Switch-case control logic</span>
+                <span><i class="fa-solid fa-check"></i> Standard I/O (printf / scanf)</span>
+                <span><i class="fa-solid fa-check"></i> Division-by-zero guard</span>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Switch Case</span>
+                <span class="tech-tag">CLI</span>
+                <span class="tech-tag">Math</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <!-- PLACEHOLDER: Replace '#' with your GitHub repository link -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="View Source on GitHub (Placeholder)">
+                <i class="fa-brands fa-github"></i>
+                <span>View Source</span>
+              </a>
+              <span class="project-status-note">Beginner Project</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Number Pattern Programs in C -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-header">
+              <div class="project-icon-box purple-gradient">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+              <span class="project-type-badge">C Language</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Number Pattern Programs (C)</h3>
+              <p class="project-description">
+                A structured collection of console pattern printers implemented in C. Explores nested loops to produce pyramids, inverted triangles, Floyd's triangle, number matrices, and hollow squares with dynamic row input.
+              </p>
+
+              <div class="project-highlights">
+                <span><i class="fa-solid fa-check"></i> Nested for-loops logic</span>
+                <span><i class="fa-solid fa-check"></i> Dynamic user-defined rows</span>
+                <span><i class="fa-solid fa-check"></i> Spacing &amp; coordinate math</span>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Nested Loops</span>
+                <span class="tech-tag">Logic Building</span>
+                <span class="tech-tag">Algorithms</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <!-- PLACEHOLDER: Replace '#' with your GitHub repository link -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="View Source on GitHub (Placeholder)">
+                <i class="fa-brands fa-github"></i>
+                <span>View Source</span>
+              </a>
+              <span class="project-status-note">Logic Practice</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Basic Python Programs Suite -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-header">
+              <div class="project-icon-box cyan-gradient">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="project-type-badge">Python</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Basic Python Programs</h3>
+              <p class="project-description">
+                A starter repository of introductory Python programs built while learning syntax. Includes a number guessing game with random numbers, a temperature converter (°C to °F), and basic string operations.
+              </p>
+
+              <div class="project-highlights">
+                <span><i class="fa-solid fa-check"></i> Random number game</span>
+                <span><i class="fa-solid fa-check"></i> Temperature converter</span>
+                <span><i class="fa-solid fa-check"></i> String reversing &amp; palindromes</span>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Control Flow</span>
+                <span class="tech-tag">Functions</span>
+                <span class="tech-tag">Practice</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <!-- PLACEHOLDER: Replace '#' with your GitHub repository link -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="View Source on GitHub (Placeholder)">
+                <i class="fa-brands fa-github"></i>
+                <span>View Source</span>
+              </a>
+              <span class="project-status-note">Python Starter</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Student Grading System (Starter) -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-header">
+              <div class="project-icon-box amber-gradient">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </div>
+              <span class="project-type-badge">C &amp; Python</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Grading Calculator</h3>
+              <p class="project-description">
+                A utility script that takes marks for multiple engineering subjects, calculates total score, percentage, assigns corresponding letter grades (A, B, C, F), and determines academic standing.
+              </p>
+
+              <div class="project-highlights">
+                <span><i class="fa-solid fa-check"></i> 1D Array / List marks storage</span>
+                <span><i class="fa-solid fa-check"></i> Average &amp; percentage computation</span>
+                <span><i class="fa-solid fa-check"></i> Nested if-else grading ladder</span>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Arrays</span>
+                <span class="tech-tag">Conditionals</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <!-- PLACEHOLDER: Replace '#' with your GitHub repository link -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="View Source on GitHub (Placeholder)">
+                <i class="fa-brands fa-github"></i>
+                <span>View Source</span>
+              </a>
+              <span class="project-status-note">Academic Project</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. CERTIFICATIONS / MILESTONES SECTION ==================== -->
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Learning Milestones</span>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Goals</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Transparent milestones: currently active learning paths alongside placeholders for certificates as I complete them.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Card 1: Currently Learning (Active) -->
+          <div class="cert-card glass-card active-learning-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-badge live-badge">
+              <span class="pulse-dot"></span> In Progress (2025–2026)
+            </div>
+            <div class="cert-icon-wrapper green-gradient">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="cert-title">C &amp; Python Programming Fundamentals</h3>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-building-columns"></i> JECRC University Coursework &amp; Self-Study
+            </div>
+            <p class="cert-desc">
+              Active structured learning covering procedural programming in C, pointers, data structures, and Python scripting. Regularly writing practice programs and preparing for upcoming technical coursework.
+            </p>
+            <div class="cert-progress-wrapper">
+              <div class="cert-progress-label">
+                <span>Milestone Progress</span>
+                <span>Active Study</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill active-stream" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Placeholder 1 -->
+          <div class="cert-card glass-card placeholder-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-badge placeholder-badge">
+              <i class="fa-solid fa-pencil"></i> Placeholder #1
+            </div>
+            <div class="cert-icon-wrapper blue-gradient">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="cert-title">[Add Your Certificate Here]</h3>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-certificate"></i> e.g., Coursera / NPTEL / HackerRank
+            </div>
+            <p class="cert-desc">
+              This card is reserved for your first online course certificate (such as "Python for Everybody", "Problem Solving Basic", or "C Programming Certification").
+            </p>
+            <div class="cert-action">
+              <span class="cert-placeholder-tag">
+                <i class="fa-solid fa-code"></i> Edit in <code>index.html</code>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: Placeholder 2 -->
+          <div class="cert-card glass-card placeholder-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-badge placeholder-badge">
+              <i class="fa-solid fa-pencil"></i> Placeholder #2
+            </div>
+            <div class="cert-icon-wrapper purple-gradient">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <h3 class="cert-title">[Add Workshop / Achievement Here]</h3>
+            <div class="cert-issuer">
+              <i class="fa-solid fa-trophy"></i> e.g., College Workshop / Coding Competition
+            </div>
+            <p class="cert-desc">
+              Reserved for university technical events, coding bootcamps, workshops, or hackathon participation as you progress through your 1st year at JECRC University.
+            </p>
+            <div class="cert-action">
+              <span class="cert-placeholder-tag">
+                <i class="fa-solid fa-code"></i> Edit in <code>index.html</code>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Have a question, advice for a 1st-year student, or want to collaborate on a beginner project? Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info & Direct Email Card -->
+          <div class="contact-info-panel" data-aos="fade-right" data-aos-delay="100">
+            <div class="contact-info-card glass-card">
+              <h3 class="info-card-title">Contact Information</h3>
+              <p class="info-card-text">
+                I check my email regularly and am always excited to discuss programming, college projects, and tech opportunities.
+              </p>
+
+              <!-- Email with Click to Copy -->
+              <div class="contact-detail-box">
+                <div class="detail-icon-circle blue-gradient">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="detail-text-group">
+                  <span class="detail-subhead">Email Me Directly</span>
+                  <div class="copy-email-row">
+                    <a href="mailto:beniwaljaat118@gmail.com" class="email-link" id="email-address-text">beniwaljaat118@gmail.com</a>
+                    <button id="copy-email-btn" class="copy-btn" aria-label="Copy email address" title="Copy email address">
+                      <i class="fa-regular fa-copy"></i>
+                      <span class="copy-tooltip" id="copy-tooltip">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location Info -->
+              <div class="contact-detail-box">
+                <div class="detail-icon-circle purple-gradient">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="detail-text-group">
+                  <span class="detail-subhead">Location</span>
+                  <span class="detail-main">Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+
+              <!-- University Info -->
+              <div class="contact-detail-box">
+                <div class="detail-icon-circle cyan-gradient">
+                  <i class="fa-solid fa-university"></i>
+                </div>
+                <div class="detail-text-group">
+                  <span class="detail-subhead">University</span>
+                  <span class="detail-main">JECRC University (B.Tech CSE)</span>
+                </div>
+              </div>
+
+              <!-- Social Profiles -->
+              <div class="contact-social-section">
+                <h4 class="social-heading">Connect On Socials</h4>
+                <div class="contact-social-pills">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub (Update with your profile)">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn (Update with your profile)">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="mailto:beniwaljaat118@gmail.com" class="social-pill" title="Send Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Glass Contact Form -->
+          <div class="contact-form-panel" data-aos="fade-left" data-aos-delay="200">
+            <div class="glass-card contact-form-card">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-subtitle">Fills and opens your email client directly with your message.</p>
+
+              <!-- Form with client-side validation and mailto submission -->
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                  </div>
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                  </div>
+                  <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-pen-nib input-icon"></i>
+                    <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Project Query / Hello">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-solid fa-message input-icon textarea-icon"></i>
+                    <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                  </div>
+                  <span class="error-msg" id="message-error">Please write a message.</span>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block ripple-btn">
+                  <span>Send Message via Email</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <!-- Feedback Toast Message -->
+                <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <span class="brand-monogram">BB</span>
+            <span class="brand-name">Bhavay<span>.dev</span></span>
+          </a>
+          <p class="footer-tagline">
+            First-year B.Tech CSE student at JECRC University, Jaipur. Passionate about learning programming fundamentals, problem solving, and building the future.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Milestones</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-summary">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <p class="footer-email-text">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:beniwaljaat118@gmail.com">beniwaljaat118@gmail.com</a>
+          </p>
+          <p class="footer-location-text">
+            <i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:beniwaljaat118@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Bhavay Beniwal</strong>. Designed with pure HTML, CSS &amp; JavaScript.
+        </p>
+        <p class="credit-subtext">
+          Learning &amp; growing every day.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- External CDN Scripts -->
+  <!-- Typed.js for animated typing effect -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
